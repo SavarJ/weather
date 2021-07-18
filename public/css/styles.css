@@ -1,47 +1,50 @@
-body.body {
-  background-color: teal;
-  color: #fff;
+body {
+  background-color: hsl(180, 100%, 25%);
+  color: hsl(0, 0%, 100%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
 }
 
-#search form {
+.search-form {
   padding: 2% 5% 0%;
 }
 
-#search label {
+.search-label {
   line-height: 3;
   font-weight: bold;
+  font-size: 2rem;
 }
 
-#search input {
+.search-input {
   font-size: 1.9rem;
   max-width: 50%;
   text-transform: uppercase;
 }
 
-#search input[type="radio"] {
+.search-input.radio {
   width: 40px;
   height: 40px;
 }
 
-#search button {
+.btn {
   height: 50px;
   width: 100px;
   border-radius: 50px;
-  background-color: rgb(67, 67, 231);
+  background-color: hsl(240, 77%, 58%);
   cursor: pointer;
   font-size: 1.5rem;
-  border: 2px solid black;
+  border: 2px solid hsl(0, 0%, 0%);
   color: rgb(228, 233, 245);
+}
+
+.btn-go {
   margin-left: 275px;
 }
 
-#search button:hover {
+.btn:hover {
   background-color: rgb(70, 33, 156);
 }
 
-#search h1 {
+.search-header {
   text-align: center;
   font-family: "Montserrat";
   font-weight: 800;
@@ -50,12 +53,13 @@ body.body {
 }
 
 footer {
+  margin-top: 20px;
   font-size: 0.8rem;
   text-align: center;
-  color: rgb(224, 224, 224);
+  color: hsl(0, 0%, 88%);
 }
 
-#search .container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,85 +67,46 @@ footer {
 
 #my {
   text-decoration: none;
-  color: rgb(66, 227, 233);
+  color: hsl(183, 50%, 70%);
 }
 
 #my:hover {
   font-weight: bold;
-  color: rgb(140, 231, 235);
+  color: hsl(183, 70%, 70%);
 }
 
-#search #cityInput {
+.search-form #cityInput {
   position: relative;
   left: 73px;
 }
 
-#search #stateInput {
+.search-form #stateInput {
   position: relative;
   left: 45px;
 }
 
-#search .radioInputs {
+.search-form .radioInputs {
   display: inline-block;
   position: relative;
   left: 150px;
 }
 
-#search .none {
+.none {
   display: none;
 }
 
 /* From weather */
-#weather button {
-  height: 50px;
+.btn-searchagain {
   width: max-content;
-  border-radius: 50px;
-  background-color: hsl(240, 77%, 58%);
-  cursor: pointer;
-  font-size: 1.5rem;
-  border: 2px solid black;
-  color: rgb(228, 233, 245);
   position: relative;
-  bottom: 150px;
-  left: 50px;
   padding: 10px;
 }
 
-#weather button:hover {
-  background-color: rgb(70, 33, 156);
+.btn-weather {
+  bottom: 150px;
+  left: 50px;
 }
 
 #weather form {
-  width: max-content;
   display: inline-block;
-}
-
-/* Not found */
-
-#notfound button {
-  height: 50px;
-  width: max-content;
-  border-radius: 50px;
-  background-color: rgb(67, 67, 231);
-  cursor: pointer;
-  font-size: 1.5rem;
-  border: 2px solid black;
-  color: rgb(228, 233, 245);
-  padding: 10px;
-}
-
-#notfound button:hover {
-  background-color: rgb(70, 33, 156);
-}
-
-#notfound form {
-  width: max-content;
-  display: inline-block;
-}
-
-body.hello {
-  background-color: teal;
-  color: #fff;
-  font-family: Verdana, sans-serif;
-  padding: 5%;
 }
