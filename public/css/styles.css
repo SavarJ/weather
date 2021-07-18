@@ -1,4 +1,4 @@
-body {
+body.body {
   background-color: teal;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,7 +49,7 @@ body {
   margin-bottom: 0;
 }
 
-#search footer {
+footer {
   font-size: 0.8rem;
   text-align: center;
   color: rgb(224, 224, 224);
@@ -61,12 +61,12 @@ body {
   align-items: center;
 }
 
-#search #my {
+#my {
   text-decoration: none;
   color: rgb(66, 227, 233);
 }
 
-#search #my:hover {
+#my:hover {
   font-weight: bold;
   color: rgb(140, 231, 235);
 }
@@ -96,7 +96,7 @@ body {
   height: 50px;
   width: max-content;
   border-radius: 50px;
-  background-color: rgb(67, 67, 231);
+  background-color: hsl(240, 77%, 58%);
   cursor: pointer;
   font-size: 1.5rem;
   border: 2px solid black;
@@ -137,4 +137,11 @@ body {
 #notfound form {
   width: max-content;
   display: inline-block;
+}
+
+body.hello {
+  background-color: teal;
+  color: #fff;
+  font-family: Verdana, sans-serif;
+  padding: 5%;
 }

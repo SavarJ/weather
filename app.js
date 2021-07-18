@@ -61,14 +61,14 @@ function displayWeather(req, res) {
         const letter = units === "Metric" ? "C" : "F";
         const minTemp = Math.round(weatherData.main.temp_min);
         const maxTemp = Math.round(weatherData.main.temp_max);
-        const placeTimeinUTCSecs = weatherData.timezone;
 
         city = weatherData.name + ", ";
         country = weatherData.sys.country;
 
-        const realFeelLine = "Real Feel: " + realFeel + " &#176;" + letter;
-        const minTempLine = "Min: " + minTemp + " &#176;" + letter;
-        const maxTempLine = "Max: " + maxTemp + " &#176;" + letter;
+        const degSymbol = "\xB0";
+        const realFeelLine = "Real Feel: " + realFeel + degSymbol + letter;
+        const minTempLine = "Min: " + minTemp + degSymbol + letter;
+        const maxTempLine = "Max: " + maxTemp + degSymbol + letter;
 
         const weatherIconUrl =
           "http://openweathermap.org/img/wn/" +
@@ -85,7 +85,7 @@ function displayWeather(req, res) {
           country +
           " is " +
           temp +
-          " &#176;" +
+          degSymbol +
           letter;
         const moreTempLine =
           realFeelLine + ", " + minTempLine + ", " + maxTempLine;

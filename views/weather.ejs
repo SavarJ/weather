@@ -1,13 +1,15 @@
 <%- include("partials/header") -%>
-<div id="weather">
-    <h1><%= weatherDescLine %> </h1>
-    <h1><%= mainTempLine %> </h1>
-    <h1><%= moreTempLine %> </h1>
-    <img src="<%= weatherIconUrl %> " alt='weather-img'>
-    <form action='/retry' method='GET'>
-        <button type='submit'>SEARCH AGAIN</button>
-    </form>
-</div>
+
+<body class="hello">
+    <div id="weather">
+        <h1><%= weatherDescLine %> </h1>
+        <h1><%= mainTempLine %> </h1>
+        <h1><%= moreTempLine %> </h1>
+        <img src="<%= weatherIconUrl %> " alt='weather-img' width="25%">
+        <form action='/retry' method='GET'>
+            <button type='submit'>SEARCH AGAIN</button>
+        </form>
+    </div>
 
 
-<%- include("partials/footer") -%>
+    <%- include("partials/footer") -%>
