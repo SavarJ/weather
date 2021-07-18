@@ -1,38 +1,59 @@
 <%- include("partials/header") -%>
 
-<body>
-    <div id="search">
-        <h1 class="search-header">Simple Weather App</h1>
-        <div class="container">
-            <form class="search-form" action="/" method="post">
-                <label class="search-label" for="countryInput">Country Name:</label>
-                <input class="search-input" id="countryInput" type="text" name="countryName" placeholder="USA"
-                    onkeydown="stateChanger()" required autofocus>
-                <br>
-                <label class="search-label" for="cityInput">City Name:</label>
-                <input class="search-input" id="cityInput" type="text" name="cityName" placeholder="Dallas" required>
-                <br>
-                <div id="state" class="none">
-                    <label class="search-label" for="stateInput">State Name:</label>
-                    <input class="search-input" id="stateInput" type="text" name="stateName" placeholder="TX"
-                        maxlength="2">
-                    <br>
+<div id="search">
+    <h1 class="search-header">Simple Weather App</h1>
+    <div class="container">
+        <form class="search-form" action="/" method="post">
+            <div class="row search-row">
+                <div class="col-md-6">
+                    <label class="search-label" for="countryInput">Country Name:</label>
                 </div>
-                <label class="search-label" for="">Units:</label>
-                <div class="radioInputs">
-                    <input class="search-input radio" type="radio" name="units" value="Imperial" id="metric"
-                        onclick="stateChanger()" required>
-                    <label class="search-label" for="metric">&#176;F</label>
-                    <input class="search-input radio" type="radio" name="units" value="Metric" id="imperial"
-                        onclick="stateChanger()" required>
-                    <label class="search-label" for="imperial">&#176;C</label>
+                <div class="col-md-6">
+                    <input class="search-input" id="countryInput" type="text" name="countryName" placeholder="USA"
+                        onkeydown="stateChanger()" required autofocus>
                 </div>
-                <br>
-                <button class="btn btn-go" type="submit">GO</button>
-            </form>
+            </div>
+            <div class="row search-row">
+                <div class="col-md-6">
+                    <label class="search-label city" for="cityInput">City Name:</label>
+                </div>
+                <div class="col-md-6">
+                    <input class="search-input" id="cityInput" type="text" name="cityName" placeholder="Dallas"
+                        required>
+                </div>
+            </div>
+            <div id="state" class="none">
+                <div class="row search-row">
 
-        </div>
+                    <div class="col-md-6">
+                        <label class="search-label state" for="stateInput">State Name:</label>
+
+                    </div>
+                    <div class="col-md-6">
+                        <input class="search-input" id="stateInput" type="text" name="stateName" placeholder="TX"
+                            maxlength="2">
+                    </div>
+                </div>
+            </div>
+            <div class="row search-row">
+                <div class="col-md-6">
+                    <label class="search-label units" for="">Units:</label>
+                </div>
+                <div class="col-md-6">
+                    <div class="radioInputs">
+                        <input class="search-input radio" type="radio" name="units" value="Imperial" id="metric"
+                            onclick="stateChanger()" required>
+                        <label class="search-label" for="metric">&#176;F</label>
+                        <input class="search-input radio" type="radio" name="units" value="Metric" id="imperial"
+                            onclick="stateChanger()" required>
+                        <label class="search-label" for="imperial">&#176;C</label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-lg btn-outline-dark btn-go" type="submit">GO</button>
+        </form>
     </div>
+</div>
 
 
-    <%- include("partials/footer") -%>
+<%- include("partials/footer") -%>

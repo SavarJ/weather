@@ -4,52 +4,77 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.search-form {
-  padding: 2% 5% 0%;
+@media (max-height: 500px) {
+  body {
+    margin-top: 15%;
+  }
 }
 
+@media (min-width: 770px) {
+  body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%, -50%);
+    width: 75%;
+  }
+  button.btn-go {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-55%, -50%);
+    width: 80%;
+    margin-top: 4rem;
+  }
+}
+
+#search {
+  padding: 5%;
+}
+
+.search-row {
+  margin-bottom: 2rem;
+}
+
+.search-header {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    margin-top: 1rem;
+  }
+  body {
+    text-align: center;
+  }
+}
 .search-label {
-  line-height: 3;
-  font-weight: bold;
+  /* line-height: 3; */
+  /* font-weight: bold; */
   font-size: 2rem;
 }
 
 .search-input {
-  font-size: 1.9rem;
-  max-width: 50%;
+  font-size: 1.5rem;
+  /* max-width: 50%; */
   text-transform: uppercase;
 }
 
 .search-input.radio {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
-.btn {
-  height: 50px;
-  width: 100px;
-  border-radius: 50px;
-  background-color: hsl(240, 77%, 58%);
-  cursor: pointer;
-  font-size: 1.5rem;
-  border: 2px solid hsl(0, 0%, 0%);
-  color: rgb(228, 233, 245);
+.radioInputs > .search-label {
+  padding-right: 2rem;
 }
 
-.btn-go {
-  margin-left: 275px;
-}
-
-.btn:hover {
-  background-color: rgb(70, 33, 156);
-}
-
-.search-header {
+button {
+  min-width: 150px;
   text-align: center;
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 4.5rem;
-  margin-bottom: 0;
 }
 
 footer {
@@ -57,12 +82,6 @@ footer {
   font-size: 0.8rem;
   text-align: center;
   color: hsl(0, 0%, 88%);
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #my {
@@ -73,22 +92,6 @@ footer {
 #my:hover {
   font-weight: bold;
   color: hsl(183, 70%, 70%);
-}
-
-.search-form #cityInput {
-  position: relative;
-  left: 73px;
-}
-
-.search-form #stateInput {
-  position: relative;
-  left: 45px;
-}
-
-.search-form .radioInputs {
-  display: inline-block;
-  position: relative;
-  left: 150px;
 }
 
 .none {
