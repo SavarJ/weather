@@ -1,8 +1,11 @@
 const express = require("express");
 const https = require("https");
+const ejs = require("ejs");
 require("dotenv").config();
 
 const app = express();
+
+app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
