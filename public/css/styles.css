@@ -5,7 +5,8 @@ body {
 }
 
 #search,
-#weather {
+#weather,
+#notfound {
   padding: 5%;
 }
 
@@ -78,49 +79,19 @@ footer {
   justify-content: center;
 }
 
+body.notfound-body {
+  text-align: center;
+}
+body.notfound-body button {
+  text-align: center;
+  position: static;
+  transform: translate(0, 0);
+}
+
 @media (min-width: 770px) {
   button.btn-search-again {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-55%, -50%);
-    width: 80%;
-    margin: 0 5%;
-    margin-top: 4rem;
+    margin: 5% 5% 0;
   }
-}
-
-@media (max-width: 768px) {
-  .search-input {
-    margin-top: 1rem;
-  }
-  body {
-    text-align: center;
-    margin: auto;
-    padding: 5% 10%;
-  }
-}
-
-@media (max-width: 768px) {
-  .search-input {
-    margin-top: 1rem;
-  }
-  body.search-body {
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-    margin-left: 0px;
-  }
-}
-
-@media (max-height: 500px) {
-  body.search-body {
-    margin-top: 15%;
-  }
-}
-
-@media (min-width: 770px) {
   body.search-body {
     position: absolute;
     left: 50%;
@@ -128,12 +99,40 @@ footer {
     transform: translate(-45%, -50%);
     width: 75%;
   }
-  button.btn-go {
+  button {
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-55%, -50%);
     width: 80%;
     margin-top: 4rem;
+  }
+  footer.weather-footer {
+    margin-left: 40px;
+  }
+  footer.notfound-footer {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  .search-input {
+    margin-top: 1rem;
+  }
+  body {
+    text-align: center;
+    padding: 5% 10%;
+  }
+  footer {
+    margin-left: 0px;
+  }
+  button {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-height: 500px) {
+  body.search-body {
+    margin-top: 15%;
   }
 }
