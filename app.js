@@ -2,8 +2,9 @@ const express = require("express");
 const https = require("https");
 const ejs = require("ejs");
 const dotenv = require("dotenv");
-
 dotenv.config();
+
+const PORT = process.env.PORT ?? 3000;
 
 const app = express();
 
@@ -101,6 +102,6 @@ function success(weatherData, state, letter, res) {
   res.render("weather", ejsobj);
 }
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log("Server is running on port 3000");
 });
