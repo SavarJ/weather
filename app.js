@@ -36,7 +36,7 @@ function displayWeather(req, res) {
   let city = req.body.cityName.trim() + ",";
   let country = req.body.countryName.trim();
   let state = req.body.stateName.trim();
-  const apiKey = process.env.API_Key;
+  const apiKey = process.env.API_KEY;
   const units = req.body.units;
   let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city;
   let enteredState;
