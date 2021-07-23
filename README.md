@@ -1,11 +1,50 @@
 # Simple Weather App
 
-A simple weather app that will display the weather and current, min, max, and real feel temperature. </br>
-[Live Demo]()
+A simple yet fully responsive weather app that will display the weather and current, min, max, and real feel temperature.
+
+<br>
+
+## Table of Contents
 
 ---
 
+- [Deployment](#deployment)
+- [Built With](#built-with)
+- [Requirements](#requirements)
+- [Install](#install)
+- [Author(s)](#authors)
+- [License](#license)
+- [Acknowledgements](#acknowledgement)
+
+</br>
+
+## Deployment
+
+**[Live Demo: https://savarj-weather.herokuapp.com/](https://savarj-weather.herokuapp.com/)**
+
+<br>
+
+![Search-page](public/images/search.png)
+
+<br>
+
+![Weather-page](public/images/weather.png)
+
+## Built With
+
+---
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/en/docs/)
+- [Express.js](https://expressjs.com/en/5x/api.html)
+- [EJS](https://ejs.co/)
+
 ## Requirements
+
+---
 
 For development, you will only need Node.js and a node global package, NPM, installed in your environement.
 
@@ -23,14 +62,38 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     6.14.13
 
----
+</br>
 
 ## Install
+
+---
 
     $ git clone https://github.com/SavarJ/weather.git
     $ cd weather
     $ npm install
 
-## Running the project
+### Running the project
 
     $ npm start
+
+## Author(s)
+
+---
+
+- **[Savar Jain](https://jainsavar.com)**
+
+## Licenses
+
+---
+
+![MIT License](https://camo.githubusercontent.com/c97d380d0a98377c53391026883a89c16ded751eb41f9e57a53e009664447d50/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542532304c6963656e73652d626c75652e737667)
+
+Copyright (c) 2021 Savar Jain
+
+Licensed under the [MIT License](LICENSE)
+
+## Acknowledgements
+
+---
+
+- The Complete 2021 Web Development Bootcamp by Dr. Angela Yu
