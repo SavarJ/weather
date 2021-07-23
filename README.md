@@ -4,8 +4,6 @@ A simple yet fully responsive weather app that will display the weather and curr
 
 <br>
 
----
-
 ## Table of Contents
 
 - [Deployment](#deployment)
