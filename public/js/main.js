@@ -1,9 +1,10 @@
 function stateChanger() {
-  if (
-    document.querySelector("#countryInput").value.toUpperCase().includes("US")
-  ) {
-    document.querySelector("#state").classList.remove("none");
+  const stateInput = document.querySelector("#state");
+  const countryInput = document.querySelector("#countryInput");
+
+  if (countryInput.value.toUpperCase().includes("US")) {
+    stateInput.classList.remove("none");
   } else {
-    document.querySelector("#state").classList.add("none");
+    stateInput.classList.add("none");
   }
 }
