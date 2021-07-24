@@ -12,7 +12,7 @@ A simple yet fully responsive weather app that will display the weather and curr
 - [Install](#install)
 - [Author(s)](#authors)
 - [License](#license)
-- [Acknowledgements](#acknowledgement)
+- [Acknowledgement](#acknowledgement)
 
 </br>
 
@@ -64,6 +64,10 @@ If the installation was successful, you should be able to run the following comm
     $ cd weather
     $ npm install
 
+### Updating .env
+
+Rename `.env.sample` to `.env` with the appropriate information
+
 ### Running the project
 
     $ npm start
@@ -72,7 +76,7 @@ If the installation was successful, you should be able to run the following comm
 
 - **[Savar Jain](https://jainsavar.com)**
 
-## Licenses
+## License
 
 ![MIT License](https://camo.githubusercontent.com/c97d380d0a98377c53391026883a89c16ded751eb41f9e57a53e009664447d50/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542532304c6963656e73652d626c75652e737667)
 
@@ -80,6 +84,6 @@ Copyright (c) 2021 Savar Jain
 
 Licensed under the [MIT License](LICENSE)
 
-## Acknowledgements
+## Acknowledgement
 
 - The Complete 2021 Web Development Bootcamp by Dr. Angela Yu
