@@ -2,8 +2,6 @@
 
 A simple yet fully responsive weather app that will display the weather and current, min, max, and real feel temperature.
 
-<br>
-
 ## Table of Contents
 
 - [Deployment](#deployment)
@@ -55,8 +53,6 @@ If the installation was successful, you should be able to run the following comm
 
     $ npm --version
     6.14.13
-
-</br>
 
 ## Install
 
