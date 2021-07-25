@@ -7,7 +7,7 @@ body {
 #search,
 #weather,
 #notfound {
-  padding: 5%;
+  padding: 6% 5% 5%;
 }
 
 .search-row {
