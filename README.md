@@ -82,4 +82,4 @@ Licensed under the [MIT License](LICENSE)
 
 ## Acknowledgement
 
-- The Complete 2021 Web Development Bootcamp by Dr. Angela Yu
+- Challenge Project of The Complete 2021 Web Development Bootcamp by Dr. Angela Yu with some twists/changes
