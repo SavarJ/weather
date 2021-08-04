@@ -35,6 +35,7 @@ A simple yet fully responsive weather app that will display the weather and curr
 - [Node.js](https://nodejs.org/en/docs/)
 - [Express.js](https://expressjs.com/en/5x/api.html)
 - [EJS](https://ejs.co/)
+- [OpenWeather API](https://openweathermap.org/api)
 
 ## Requirements
 
